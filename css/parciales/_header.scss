@@ -1,0 +1,18 @@
+@import"./reset";
+@import"./variables";
+@import "./responsive";
+
+/*----- ANIDACION O NESTING Y USO DE &------*/
+.header {
+  background-color: $color;
+  justify-content: center;
+  display: flex;
+
+  &_contactanos {
+    color: $contactoDerechos;
+    padding: 10px;
+    font-family: $textfont;
+    font-display: swap;
+    font-weight: bold;
+  }
+}

@@ -1,0 +1,88 @@
+@import"./reset";
+@import "./variables";
+@import "./responsive";
+
+/*------NESTING O ANIDACION y USO DEL & -----*/
+/*------MIXIN------------*/
+@mixin centradoNegrita {
+    text-align: center;
+    font-weight: bold;
+}
+
+.footer {
+    @include centradoNegrita();
+    background-color: $colornf;
+    font-size: 20px;
+
+    &_tex {
+        margin-top: 3px;
+    }
+
+    &_tit {
+        padding: 10px;
+    }
+
+    &_dire {
+        margin-top: 10px;
+        padding: 10px;
+
+    }
+
+    &_seguinos {
+        padding: 50px;
+    }
+
+    &_tituint {
+        padding: 4px;
+    }
+
+    &__instagram {
+        text-decoration: none;
+        color: purple;
+
+    }
+
+    &__facebook {
+        text-decoration: none;
+        color: blue;
+    }
+}
+
+$estiloFooter :(alineacion: center,
+    Fondo: #A9CCE3,
+    Fuente: monospace,
+    fond-display:swap,
+    negrita:bold,
+    Tamaño:1em,
+);
+
+.footer {
+    text-align: map-get($estiloFooter, alineacion);
+    background-color: map-get($estiloFooter, Fondo);
+    font-family: map-get($estiloFooter, Fuente);
+    font-size: map-get($estiloFooter, Tamaño);
+    font-weight: map-get($estiloFooter, negrita);
+}
+
+.mapagoogle {
+    text-align: center;
+}
+
+.contenedor__face {
+    color: blue;
+    padding: 10px;
+}
+
+.contenedor__inst {
+    color: purple;
+    padding: 10px;
+
+}
+
+.derechos {
+    padding: 10px;
+    color: $contactoDerechos;
+    font-weight: bold;
+    font-family: $textfont;
+    size: $textsizecontacto;
+}

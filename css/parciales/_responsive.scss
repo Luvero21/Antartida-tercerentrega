@@ -1,0 +1,60 @@
+/*------RESPONSIVE------*/
+@media (max-width: 425px) {
+    .solhielo {
+        width: 80px;
+        height: 80px;
+        text-align: center;
+    }
+
+    .hogarrounded {
+        width: 280px;
+        height: 200px;
+    }
+
+    .main__videoreproduccion {
+        width: 280px;
+        height: 200px;
+    }
+
+    .mapagoogle {
+        width: 280px;
+        height: 200px;
+    }
+
+    .instagram {
+        width: 20px;
+        height: 20px;
+    }
+
+    .facebook {
+        width: 20px;
+        height: 20px;
+    }
+
+    .imagenInstala1 {
+        width: 280px;
+        height: 200px;
+    }
+
+    .imagenInstala2 {
+        width: 280px;
+        height: 200px;
+    }
+}
+
+@media only screen and (min-width:426px) and (max-width:768px) {
+    .main__videoreproduccion {
+        width: 410px;
+        height: 320px;
+    }
+}
+
+
+
+@media only screen and (min-width:320px) and (max-width:768px) {
+    .btn__wsp {
+        width: 63px;
+        height: 63px;
+        line-height: 66px;
+    }
+}

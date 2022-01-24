@@ -1,0 +1,102 @@
+@import "../parciales/variables";
+@import "../parciales/responsive";
+@import "../parciales/reset";
+
+/*----------ESTILOS CONTACTO---------*/
+.main {
+    background: rgba(179, 220, 237, 1);
+    background: -moz-linear-gradient(-45deg, rgba(179, 220, 237, 1) 0%, rgba(179, 220, 237, 1) 27%, rgba(41, 184, 229, 1) 50%, rgba(179, 220, 237, 1) 70%, rgba(188, 224, 238, 1) 100%);
+    background: -webkit-linear-gradient(-45deg, rgba(179, 220, 237, 1) 0%, rgba(179, 220, 237, 1) 27%, rgba(41, 184, 229, 1) 50%, rgba(179, 220, 237, 1) 70%, rgba(188, 224, 238, 1) 100%);
+    background: -o-linear-gradient(-45deg, rgba(179, 220, 237, 1) 0%, rgba(179, 220, 237, 1) 27%, rgba(41, 184, 229, 1) 50%, rgba(179, 220, 237, 1) 70%, rgba(188, 224, 238, 1) 100%);
+    background: -ms-linear-gradient(-45deg, rgba(179, 220, 237, 1) 0%, rgba(179, 220, 237, 1) 27%, rgba(41, 184, 229, 1) 50%, rgba(179, 220, 237, 1) 70%, rgba(188, 224, 238, 1) 100%);
+    background: linear-gradient(135deg, rgba(179, 220, 237, 1) 0%, rgba(179, 220, 237, 1) 27%, rgba(41, 184, 229, 1) 50%, rgba(179, 220, 237, 1) 70%, rgba(188, 224, 238, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#b3dced', endColorstr='#bce0ee', GradientType=1);
+
+}
+
+.main__comunicate {
+    text-align: center;
+    padding: 20px;
+    color: transparent;
+    font-weight: normal;
+    background: linear-gradient(black,
+            grey);
+    -webkit-background-clip: text;
+    position: relative;
+    font-family: monospace;
+}
+
+.form {
+    max-inline-size: 550px;
+    margin: auto;
+}
+
+.form label {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: .5em;
+    padding-inline-start: .5em;
+}
+
+.form label span {
+    color: #DA1414;
+}
+
+.form textarea {
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 1rem;
+    padding: .8em;
+    border-radius: .5em;
+    border: 1px solid #858C94;
+}
+
+.form textarea {
+    margin-block-end: 2em;
+    font-family: inherit;
+}
+
+input::-webkit-input-placeholder {
+    color: #0F0A0A88;
+}
+
+
+/*--------------EXTEND-----------*/
+
+.btn {
+    color: $contactoDerechos;
+    background: white;
+    padding: 5px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 0px;
+    font-family: Arial,
+        Helvetica,
+        sans-serif;
+    font-size: 1em;
+}
+
+.btn-Enviar {
+    @extend.btn;
+    font-family: cursive
+}
+
+.btn-Limpiar {
+    @extend .btn;
+    background-color: gray;
+    color: black;
+    margin-left: 70px;
+    font-family: cursive;
+
+}
+
+.btn-Enviar:hover {
+    background-color: lightgray;
+}
+
+.btn-Limpiar:hover {
+    background-color: whitesmoke;
+}

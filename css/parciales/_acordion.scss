@@ -1,0 +1,36 @@
+@import"./variables";
+@import"./responsive";
+@import"./reset";
+
+
+.section {
+    margin-bottom: 3px;
+
+}
+
+.section_acordion-flush {
+    padding: 3px;
+    background-color: $color;
+}
+
+.accordion {
+    background-color: $color;
+}
+
+
+.acordion-item {
+    background-color: $color;
+
+    .acordion-header {
+        font-weight: bold;
+    }
+
+    .acordion-button {
+        color: blue;
+        background-color: $color;
+    }
+
+    .acordion-body {
+        text-align: center;
+        background-color: $color;
+    }

@@ -1,0 +1,17 @@
+@import"./variables";
+@import"./responsive";
+@import "../parciales/reset";
+
+/*------------ESTILOS PRESUPUESTOS----------*/
+
+.section__presu {
+    text-align: center;
+    padding: 20px;
+    color: transparent;
+    font-weight: normal;
+    background: linear-gradient(black,
+            grey);
+    -webkit-background-clip: text;
+    position: relative;
+    font-family: monospace;
+}

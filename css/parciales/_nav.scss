@@ -1,0 +1,30 @@
+@import"./reset";
+@import"./variables";
+@import "./responsive";
+
+
+/*-------USO DE VARIABLES--------*/
+.navbar {
+    background-color: $colornf;
+    font-family: monospace;
+    font-display: swap;
+}
+
+#menu a {
+    font-size: 18px;
+    color: black;
+}
+
+.spammenu {
+    font-size: 6px;
+}
+
+.nav-item {
+    margin: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.nav-item:hover {
+    border-bottom: black solid 3px;
+}
