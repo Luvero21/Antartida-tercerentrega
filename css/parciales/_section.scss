@@ -8,8 +8,6 @@
     margin-right: auto;
     padding: 10px;
 
-
-
     &_fila_col {
         margin: 2px;
         margin-top: 10px;
@@ -36,10 +34,12 @@
     &_info {
         font-size: 25px;
         font-weight: bold;
-        padding: 3px;
+        padding: 30px;
         text-align: center;
         font-family: monospace;
         font-display: swap;
+        height: auto;
+        display: flex;
     }
 
     &_hogar {
@@ -73,6 +73,38 @@
         padding-bottom: 25px;
         padding-top: 20px;
     }
+}
+
+/*--------------portada-----------*/
+.container-portada {
+    width: 100%;
+    height: 600px;
+    background-image: url(/assets/portada.jpg);
+    background-size: 200%;
+    position: relative;
+    animation: movimiento 20s linear infinite alternate;
+    animation-duration: 20s;
+
+}
+
+@keyframes movimiento {
+    from {
+        background-position: top left;
+    }
+
+    to {
+        background-position: bottom right;
+    }
+}
+
+.capa-gradient {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: -webkit-linear-gradient(left,
+            #A9CCE3);
+    opacity: 0.4;
+
 }
 
 /*--------------MAPS--------------*/
