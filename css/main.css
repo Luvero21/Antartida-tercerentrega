@@ -13,9 +13,15 @@
 /*------RESPONSIVE------*/
 @media (max-width: 425px) {
   .solhielo {
-    width: 80px;
-    height: 80px;
-    text-align: center;
+    width: 60px;
+    height: 60px;
+    text-align: left;
+    padding: 0%;
+    margin-left: 0%;
+  }
+
+  .nav-item {
+    margin: 0;
   }
 
   .hogarrounded {
@@ -26,6 +32,26 @@
   .main__videoreproduccion {
     width: 280px;
     height: 200px;
+  }
+
+  .aire {
+    width: 300px;
+    height: 280px;
+  }
+
+  .radiador {
+    width: 300px;
+    height: 280px;
+  }
+
+  .caldera {
+    width: 300px;
+    height: 280px;
+  }
+
+  .heladera {
+    width: 300px;
+    height: 280px;
   }
 
   .mapagoogle {
@@ -53,7 +79,12 @@
     height: 200px;
   }
 }
-@media only screen and (min-width: 320px) and (max-width: 630px) {
+@media (max-width: 360px) {
+  .section_info {
+    font-size: 14px;
+  }
+}
+@media only screen and (min-width: 361px) and (max-width: 630px) {
   .section_info {
     font-size: 16px;
   }
@@ -94,9 +125,15 @@
 /*------RESPONSIVE------*/
 @media (max-width: 425px) {
   .solhielo {
-    width: 80px;
-    height: 80px;
-    text-align: center;
+    width: 60px;
+    height: 60px;
+    text-align: left;
+    padding: 0%;
+    margin-left: 0%;
+  }
+
+  .nav-item {
+    margin: 0;
   }
 
   .hogarrounded {
@@ -107,6 +144,26 @@
   .main__videoreproduccion {
     width: 280px;
     height: 200px;
+  }
+
+  .aire {
+    width: 300px;
+    height: 280px;
+  }
+
+  .radiador {
+    width: 300px;
+    height: 280px;
+  }
+
+  .caldera {
+    width: 300px;
+    height: 280px;
+  }
+
+  .heladera {
+    width: 300px;
+    height: 280px;
   }
 
   .mapagoogle {
@@ -134,7 +191,12 @@
     height: 200px;
   }
 }
-@media only screen and (min-width: 320px) and (max-width: 630px) {
+@media (max-width: 360px) {
+  .section_info {
+    font-size: 14px;
+  }
+}
+@media only screen and (min-width: 361px) and (max-width: 630px) {
   .section_info {
     font-size: 16px;
   }
@@ -154,7 +216,7 @@
 }
 /*-------USO DE VARIABLES--------*/
 .navbar {
-  background-color: #A9CCE3;
+  background-color: #F2F3F4;
   font-family: monospace;
   font-display: swap;
 }
@@ -175,7 +237,7 @@
 }
 
 .nav-item:hover {
-  border-bottom: black solid 3px;
+  border-bottom: grey solid 2px;
 }
 
 * {
@@ -187,9 +249,15 @@
 /*------RESPONSIVE------*/
 @media (max-width: 425px) {
   .solhielo {
-    width: 80px;
-    height: 80px;
-    text-align: center;
+    width: 60px;
+    height: 60px;
+    text-align: left;
+    padding: 0%;
+    margin-left: 0%;
+  }
+
+  .nav-item {
+    margin: 0;
   }
 
   .hogarrounded {
@@ -200,6 +268,26 @@
   .main__videoreproduccion {
     width: 280px;
     height: 200px;
+  }
+
+  .aire {
+    width: 300px;
+    height: 280px;
+  }
+
+  .radiador {
+    width: 300px;
+    height: 280px;
+  }
+
+  .caldera {
+    width: 300px;
+    height: 280px;
+  }
+
+  .heladera {
+    width: 300px;
+    height: 280px;
   }
 
   .mapagoogle {
@@ -227,7 +315,12 @@
     height: 200px;
   }
 }
-@media only screen and (min-width: 320px) and (max-width: 630px) {
+@media (max-width: 360px) {
+  .section_info {
+    font-size: 14px;
+  }
+}
+@media only screen and (min-width: 361px) and (max-width: 630px) {
   .section_info {
     font-size: 16px;
   }
@@ -248,7 +341,6 @@
 .section {
   margin-left: auto;
   margin-right: auto;
-  padding: 10px;
 }
 .section_fila_col {
   margin: 2px;
@@ -263,7 +355,7 @@
   text-align: center;
   color: transparent;
   font-weight: normal;
-  background: linear-gradient(black, grey);
+  background: linear-gradient(45deg, black, #A9CCE3);
   -webkit-background-clip: text;
   position: relative;
   font-family: monospace;
@@ -310,11 +402,13 @@
 .container-portada {
   width: 100%;
   height: 600px;
-  background-image: url(/assets/portada.jpg);
-  background-size: 200%;
+  background-image: url(/assets/portada.webp);
+  background-size: cover;
   position: relative;
   animation: movimiento 20s linear infinite alternate;
   animation-duration: 20s;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 @keyframes movimiento {
@@ -329,8 +423,34 @@
   width: 100%;
   height: 100%;
   position: absolute;
-  background: -webkit-linear-gradient(left, #A9CCE3);
-  opacity: 0.4;
+  background: -webkit-linear-gradient(45deg, #A9CCE3, white);
+  opacity: 0.6;
+}
+
+.container-details {
+  position: relative;
+  width: 100%;
+  display: flex;
+}
+
+.btn-Info {
+  color: black;
+  background: none;
+  border: 1px solid black;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: monospace;
+  font-size: 1em;
+  text-align: center;
+  margin-left: 50px;
+  margin-top: 0%;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn-Info:hover {
+  background-color: honeydew;
+  color: grey;
 }
 
 /*--------------MAPS--------------*/
@@ -366,6 +486,22 @@
   background-color: white;
 }
 
+.aire {
+  object-fit: cover;
+}
+
+.radiador {
+  object-fit: cover;
+}
+
+.caldera {
+  object-fit: cover;
+}
+
+.heladera {
+  object-fit: cover;
+}
+
 .section {
   background: #b3dced;
   background: -moz-linear-gradient(-45deg, #b3dced 0%, #b3dced 27%, #29b8e5 50%, #b3dced 70%, #bce0ee 100%);
@@ -391,10 +527,6 @@
   padding: 20px;
 }
 
-.section_acordion-flush {
-  padding: 20px;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -404,9 +536,15 @@
 /*------RESPONSIVE------*/
 @media (max-width: 425px) {
   .solhielo {
-    width: 80px;
-    height: 80px;
-    text-align: center;
+    width: 60px;
+    height: 60px;
+    text-align: left;
+    padding: 0%;
+    margin-left: 0%;
+  }
+
+  .nav-item {
+    margin: 0;
   }
 
   .hogarrounded {
@@ -417,6 +555,26 @@
   .main__videoreproduccion {
     width: 280px;
     height: 200px;
+  }
+
+  .aire {
+    width: 300px;
+    height: 280px;
+  }
+
+  .radiador {
+    width: 300px;
+    height: 280px;
+  }
+
+  .caldera {
+    width: 300px;
+    height: 280px;
+  }
+
+  .heladera {
+    width: 300px;
+    height: 280px;
   }
 
   .mapagoogle {
@@ -444,7 +602,12 @@
     height: 200px;
   }
 }
-@media only screen and (min-width: 320px) and (max-width: 630px) {
+@media (max-width: 360px) {
+  .section_info {
+    font-size: 14px;
+  }
+}
+@media only screen and (min-width: 361px) and (max-width: 630px) {
   .section_info {
     font-size: 16px;
   }
@@ -467,7 +630,7 @@
 .footer {
   text-align: center;
   font-weight: bold;
-  background-color: #A9CCE3;
+  background-color: #F2F3F4;
   font-size: 20px;
 }
 .footer_tex {
@@ -497,7 +660,7 @@
 
 .footer {
   text-align: center;
-  background-color: #A9CCE3;
+  background-color: #F2F3F4;
   font-family: monospace;
   font-size: 1em;
   font-weight: bold;
@@ -528,9 +691,15 @@
 /*------RESPONSIVE------*/
 @media (max-width: 425px) {
   .solhielo {
-    width: 80px;
-    height: 80px;
-    text-align: center;
+    width: 60px;
+    height: 60px;
+    text-align: left;
+    padding: 0%;
+    margin-left: 0%;
+  }
+
+  .nav-item {
+    margin: 0;
   }
 
   .hogarrounded {
@@ -541,6 +710,26 @@
   .main__videoreproduccion {
     width: 280px;
     height: 200px;
+  }
+
+  .aire {
+    width: 300px;
+    height: 280px;
+  }
+
+  .radiador {
+    width: 300px;
+    height: 280px;
+  }
+
+  .caldera {
+    width: 300px;
+    height: 280px;
+  }
+
+  .heladera {
+    width: 300px;
+    height: 280px;
   }
 
   .mapagoogle {
@@ -568,7 +757,12 @@
     height: 200px;
   }
 }
-@media only screen and (min-width: 320px) and (max-width: 630px) {
+@media (max-width: 360px) {
+  .section_info {
+    font-size: 14px;
+  }
+}
+@media only screen and (min-width: 361px) and (max-width: 630px) {
   .section_info {
     font-size: 16px;
   }
@@ -589,9 +783,15 @@
 /*------RESPONSIVE------*/
 @media (max-width: 425px) {
   .solhielo {
-    width: 80px;
-    height: 80px;
-    text-align: center;
+    width: 60px;
+    height: 60px;
+    text-align: left;
+    padding: 0%;
+    margin-left: 0%;
+  }
+
+  .nav-item {
+    margin: 0;
   }
 
   .hogarrounded {
@@ -602,6 +802,26 @@
   .main__videoreproduccion {
     width: 280px;
     height: 200px;
+  }
+
+  .aire {
+    width: 300px;
+    height: 280px;
+  }
+
+  .radiador {
+    width: 300px;
+    height: 280px;
+  }
+
+  .caldera {
+    width: 300px;
+    height: 280px;
+  }
+
+  .heladera {
+    width: 300px;
+    height: 280px;
   }
 
   .mapagoogle {
@@ -629,7 +849,12 @@
     height: 200px;
   }
 }
-@media only screen and (min-width: 320px) and (max-width: 630px) {
+@media (max-width: 360px) {
+  .section_info {
+    font-size: 14px;
+  }
+}
+@media only screen and (min-width: 361px) and (max-width: 630px) {
   .section_info {
     font-size: 16px;
   }
@@ -655,13 +880,11 @@
 
 /*----------ESTILOS CONTACTO---------*/
 .main {
-  background: #b3dced;
-  background: -moz-linear-gradient(-45deg, #b3dced 0%, #b3dced 27%, #29b8e5 50%, #b3dced 70%, #bce0ee 100%);
-  background: -webkit-linear-gradient(-45deg, #b3dced 0%, #b3dced 27%, #29b8e5 50%, #b3dced 70%, #bce0ee 100%);
-  background: -o-linear-gradient(-45deg, #b3dced 0%, #b3dced 27%, #29b8e5 50%, #b3dced 70%, #bce0ee 100%);
-  background: -ms-linear-gradient(-45deg, #b3dced 0%, #b3dced 27%, #29b8e5 50%, #b3dced 70%, #bce0ee 100%);
-  background: linear-gradient(135deg, #b3dced 0%, #b3dced 27%, #29b8e5 50%, #b3dced 70%, #bce0ee 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#b3dced", endColorstr="#bce0ee", GradientType=1);
+  margin: 0;
+  background-image: url(/assets/portada.webp);
+  background-size: cover;
+  background-position: center;
+  opacity: 0.7;
 }
 
 .main__comunicate {
@@ -746,9 +969,15 @@ input::-webkit-input-placeholder {
 /*------RESPONSIVE------*/
 @media (max-width: 425px) {
   .solhielo {
-    width: 80px;
-    height: 80px;
-    text-align: center;
+    width: 60px;
+    height: 60px;
+    text-align: left;
+    padding: 0%;
+    margin-left: 0%;
+  }
+
+  .nav-item {
+    margin: 0;
   }
 
   .hogarrounded {
@@ -759,6 +988,26 @@ input::-webkit-input-placeholder {
   .main__videoreproduccion {
     width: 280px;
     height: 200px;
+  }
+
+  .aire {
+    width: 300px;
+    height: 280px;
+  }
+
+  .radiador {
+    width: 300px;
+    height: 280px;
+  }
+
+  .caldera {
+    width: 300px;
+    height: 280px;
+  }
+
+  .heladera {
+    width: 300px;
+    height: 280px;
   }
 
   .mapagoogle {
@@ -786,7 +1035,12 @@ input::-webkit-input-placeholder {
     height: 200px;
   }
 }
-@media only screen and (min-width: 320px) and (max-width: 630px) {
+@media (max-width: 360px) {
+  .section_info {
+    font-size: 14px;
+  }
+}
+@media only screen and (min-width: 361px) and (max-width: 630px) {
   .section_info {
     font-size: 16px;
   }
@@ -849,9 +1103,15 @@ input::-webkit-input-placeholder {
 /*------RESPONSIVE------*/
 @media (max-width: 425px) {
   .solhielo {
-    width: 80px;
-    height: 80px;
-    text-align: center;
+    width: 60px;
+    height: 60px;
+    text-align: left;
+    padding: 0%;
+    margin-left: 0%;
+  }
+
+  .nav-item {
+    margin: 0;
   }
 
   .hogarrounded {
@@ -862,6 +1122,26 @@ input::-webkit-input-placeholder {
   .main__videoreproduccion {
     width: 280px;
     height: 200px;
+  }
+
+  .aire {
+    width: 300px;
+    height: 280px;
+  }
+
+  .radiador {
+    width: 300px;
+    height: 280px;
+  }
+
+  .caldera {
+    width: 300px;
+    height: 280px;
+  }
+
+  .heladera {
+    width: 300px;
+    height: 280px;
   }
 
   .mapagoogle {
@@ -889,7 +1169,12 @@ input::-webkit-input-placeholder {
     height: 200px;
   }
 }
-@media only screen and (min-width: 320px) and (max-width: 630px) {
+@media (max-width: 360px) {
+  .section_info {
+    font-size: 14px;
+  }
+}
+@media only screen and (min-width: 361px) and (max-width: 630px) {
   .section_info {
     font-size: 16px;
   }
@@ -925,12 +1210,26 @@ input::-webkit-input-placeholder {
   font-family: monospace;
 }
 
+.section__pre {
+  margin: 0;
+  background-image: url(/assets/portada.webp);
+  background-size: cover;
+  background-position: center;
+  opacity: 0.7;
+}
+
 /*------RESPONSIVE------*/
 @media (max-width: 425px) {
   .solhielo {
-    width: 80px;
-    height: 80px;
-    text-align: center;
+    width: 60px;
+    height: 60px;
+    text-align: left;
+    padding: 0%;
+    margin-left: 0%;
+  }
+
+  .nav-item {
+    margin: 0;
   }
 
   .hogarrounded {
@@ -941,6 +1240,26 @@ input::-webkit-input-placeholder {
   .main__videoreproduccion {
     width: 280px;
     height: 200px;
+  }
+
+  .aire {
+    width: 300px;
+    height: 280px;
+  }
+
+  .radiador {
+    width: 300px;
+    height: 280px;
+  }
+
+  .caldera {
+    width: 300px;
+    height: 280px;
+  }
+
+  .heladera {
+    width: 300px;
+    height: 280px;
   }
 
   .mapagoogle {
@@ -968,7 +1287,12 @@ input::-webkit-input-placeholder {
     height: 200px;
   }
 }
-@media only screen and (min-width: 320px) and (max-width: 630px) {
+@media (max-width: 360px) {
+  .section_info {
+    font-size: 14px;
+  }
+}
+@media only screen and (min-width: 361px) and (max-width: 630px) {
   .section_info {
     font-size: 16px;
   }
@@ -993,14 +1317,12 @@ input::-webkit-input-placeholder {
 }
 
 /*-------------ESTILOS PROMOCIONES-----------*/
-.section {
-  background: #b3dced;
-  background: -moz-linear-gradient(-45deg, #b3dced 0%, #b3dced 27%, #29b8e5 50%, #b3dced 70%, #bce0ee 100%);
-  background: -webkit-linear-gradient(-45deg, #b3dced 0%, #b3dced 27%, #29b8e5 50%, #b3dced 70%, #bce0ee 100%);
-  background: -o-linear-gradient(-45deg, #b3dced 0%, #b3dced 27%, #29b8e5 50%, #b3dced 70%, #bce0ee 100%);
-  background: -ms-linear-gradient(-45deg, #b3dced 0%, #b3dced 27%, #29b8e5 50%, #b3dced 70%, #bce0ee 100%);
-  background: linear-gradient(135deg, #b3dced 0%, #b3dced 27%, #29b8e5 50%, #b3dced 70%, #bce0ee 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#b3dced", endColorstr="#bce0ee", GradientType=1);
+.section_prom {
+  margin: 0;
+  background-image: url(/assets/portada.webp);
+  background-size: cover;
+  background-position: center;
+  opacity: 0.7;
 }
 
 .section__promo {
@@ -1023,21 +1345,21 @@ input::-webkit-input-placeholder {
 }
 
 .section__promo1 {
-  border-radius: 30% 5px solid white;
+  border-radius: 30% 5px solid black;
   font-size: 25px;
   margin: 10px;
   padding: 10px;
-  color: lightslategrey;
+  color: black;
   font-weight: bold;
   text-align: center;
 }
 
 .section__promo2 {
-  border-radius: 30% 5px solid white;
+  border-radius: 30% 5px solid black;
   font-size: 25px;
   margin: 10px;
   padding: 10px;
-  color: lightslategrey;
+  color: black;
   font-weight: bold;
   text-align: center;
 }
@@ -1045,9 +1367,15 @@ input::-webkit-input-placeholder {
 /*------RESPONSIVE------*/
 @media (max-width: 425px) {
   .solhielo {
-    width: 80px;
-    height: 80px;
-    text-align: center;
+    width: 60px;
+    height: 60px;
+    text-align: left;
+    padding: 0%;
+    margin-left: 0%;
+  }
+
+  .nav-item {
+    margin: 0;
   }
 
   .hogarrounded {
@@ -1058,6 +1386,26 @@ input::-webkit-input-placeholder {
   .main__videoreproduccion {
     width: 280px;
     height: 200px;
+  }
+
+  .aire {
+    width: 300px;
+    height: 280px;
+  }
+
+  .radiador {
+    width: 300px;
+    height: 280px;
+  }
+
+  .caldera {
+    width: 300px;
+    height: 280px;
+  }
+
+  .heladera {
+    width: 300px;
+    height: 280px;
   }
 
   .mapagoogle {
@@ -1085,7 +1433,12 @@ input::-webkit-input-placeholder {
     height: 200px;
   }
 }
-@media only screen and (min-width: 320px) and (max-width: 630px) {
+@media (max-width: 360px) {
+  .section_info {
+    font-size: 14px;
+  }
+}
+@media only screen and (min-width: 361px) and (max-width: 630px) {
   .section_info {
     font-size: 16px;
   }
@@ -1119,6 +1472,16 @@ input::-webkit-input-placeholder {
   -webkit-background-clip: text;
   position: relative;
   font-family: monospace;
+}
+
+.main__serv {
+  background: #b3dced;
+  background: -moz-linear-gradient(-45deg, #b3dced 0%, #b3dced 27%, #29b8e5 50%, #b3dced 70%, #bce0ee 100%);
+  background: -webkit-linear-gradient(-45deg, #b3dced 0%, #b3dced 27%, #29b8e5 50%, #b3dced 70%, #bce0ee 100%);
+  background: -o-linear-gradient(-45deg, #b3dced 0%, #b3dced 27%, #29b8e5 50%, #b3dced 70%, #bce0ee 100%);
+  background: -ms-linear-gradient(-45deg, #b3dced 0%, #b3dced 27%, #29b8e5 50%, #b3dced 70%, #bce0ee 100%);
+  background: linear-gradient(135deg, #b3dced 0%, #b3dced 27%, #29b8e5 50%, #b3dced 70%, #bce0ee 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#b3dced", endColorstr="#bce0ee", GradientType=1);
 }
 
 .main__desc {

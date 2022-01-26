@@ -6,7 +6,6 @@
 .section {
     margin-left: auto;
     margin-right: auto;
-    padding: 10px;
 
     &_fila_col {
         margin: 2px;
@@ -22,8 +21,7 @@
         text-align: center;
         color: transparent;
         font-weight: normal;
-        background: linear-gradient(black,
-                grey);
+        background: linear-gradient(45deg, black, #A9CCE3);
         -webkit-background-clip: text;
         position: relative;
         font-family: monospace;
@@ -79,11 +77,13 @@
 .container-portada {
     width: 100%;
     height: 600px;
-    background-image: url(/assets/portada.jpg);
-    background-size: 200%;
+    background-image: url(/assets/portada.webp );
+    background-size: cover;
     position: relative;
     animation: movimiento 20s linear infinite alternate;
     animation-duration: 20s;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 
 }
 
@@ -101,11 +101,40 @@
     width: 100%;
     height: 100%;
     position: absolute;
-    background: -webkit-linear-gradient(left,
-            #A9CCE3);
-    opacity: 0.4;
+    background: -webkit-linear-gradient(45deg,
+            #A9CCE3, white);
+    opacity: 0.6;
+}
+
+
+.container-details {
+    position: relative;
+    width: 100%;
+    display: flex;
 
 }
+
+
+.btn-Info {
+    color: $contactoDerechos;
+    background: none;
+    border: 1px solid black;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: monospace;
+    font-size: 1em;
+    text-align: center;
+    margin-left: 50px;
+    margin-top: 0%;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-Info:hover {
+    background-color: honeydew;
+    color: grey;
+}
+
 
 /*--------------MAPS--------------*/
 
@@ -149,7 +178,22 @@ $estiloMain :(alineacion : center,
     background-color: white;
 }
 
+.aire {
+    object-fit: cover;
 
+}
+
+.radiador {
+    object-fit: cover;
+}
+
+.caldera {
+    object-fit: cover;
+}
+
+.heladera {
+    object-fit: cover;
+}
 
 .section {
     background: rgba(179, 220, 237, 1);
@@ -176,9 +220,5 @@ $estiloMain :(alineacion : center,
 
 
 #carousel {
-    padding: 20px;
-}
-
-.section_acordion-flush {
     padding: 20px;
 }
