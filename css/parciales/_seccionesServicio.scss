@@ -63,9 +63,13 @@
 }
 
 .galeria--item:nth-child(9) {
-    grid-: span 2;
+    grid: span 2;
 }
 
 .galeria--item:nth-child(1) {
     grid-row-start: span 2;
+}
+
+.container__fluid {
+    padding-bottom: 30px;
 }

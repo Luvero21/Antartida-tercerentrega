@@ -48,8 +48,6 @@
     }
 
     &_servicios {
-        padding: 15px;
-        margin-top: 20px;
         font-family: monospace;
         font-display: swap;
     }
@@ -73,6 +71,16 @@
     }
 }
 
+.section_servicios {
+    background: rgba(179, 220, 237, 1);
+    background: -moz-linear-gradient(-45deg, rgba(179, 220, 237, 1) 0%, rgba(179, 220, 237, 1) 27%, rgba(41, 184, 229, 1) 50%, rgba(179, 220, 237, 1) 70%, rgba(188, 224, 238, 1) 100%);
+    background: -webkit-linear-gradient(-45deg, rgba(179, 220, 237, 1) 0%, rgba(179, 220, 237, 1) 27%, rgba(41, 184, 229, 1) 50%, rgba(179, 220, 237, 1) 70%, rgba(188, 224, 238, 1) 100%);
+    background: -o-linear-gradient(-45deg, rgba(179, 220, 237, 1) 0%, rgba(179, 220, 237, 1) 27%, rgba(41, 184, 229, 1) 50%, rgba(179, 220, 237, 1) 70%, rgba(188, 224, 238, 1) 100%);
+    background: -ms-linear-gradient(-45deg, rgba(179, 220, 237, 1) 0%, rgba(179, 220, 237, 1) 27%, rgba(41, 184, 229, 1) 50%, rgba(179, 220, 237, 1) 70%, rgba(188, 224, 238, 1) 100%);
+    background: linear-gradient(135deg, rgba(179, 220, 237, 1) 0%, rgba(179, 220, 237, 1) 27%, rgba(41, 184, 229, 1) 50%, rgba(179, 220, 237, 1) 70%, rgba(188, 224, 238, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#b3dced', endColorstr='#bce0ee', GradientType=1);
+}
+
 /*--------------portada-----------*/
 .container-portada {
     width: 100%;
@@ -80,10 +88,11 @@
     background-image: url(/assets/portada.webp );
     background-size: cover;
     position: relative;
-    animation: movimiento 20s linear infinite alternate;
-    animation-duration: 20s;
+    animation: movimiento 15s linear infinite alternate;
+    animation-duration: 15s;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    overflow: hidden;
 
 }
 
@@ -102,13 +111,13 @@
     height: 100%;
     position: absolute;
     background: -webkit-linear-gradient(45deg,
-            #A9CCE3, white);
+            lightblue,
+            white);
     opacity: 0.6;
 }
 
 
 .container-details {
-    position: relative;
     width: 100%;
     display: flex;
 
@@ -195,21 +204,9 @@ $estiloMain :(alineacion : center,
     object-fit: cover;
 }
 
-.section {
-    background: rgba(179, 220, 237, 1);
-    background: -moz-linear-gradient(-45deg, rgba(179, 220, 237, 1) 0%, rgba(179, 220, 237, 1) 27%, rgba(41, 184, 229, 1) 50%, rgba(179, 220, 237, 1) 70%, rgba(188, 224, 238, 1) 100%);
-    background: -webkit-linear-gradient(-45deg, rgba(179, 220, 237, 1) 0%, rgba(179, 220, 237, 1) 27%, rgba(41, 184, 229, 1) 50%, rgba(179, 220, 237, 1) 70%, rgba(188, 224, 238, 1) 100%);
-    background: -o-linear-gradient(-45deg, rgba(179, 220, 237, 1) 0%, rgba(179, 220, 237, 1) 27%, rgba(41, 184, 229, 1) 50%, rgba(179, 220, 237, 1) 70%, rgba(188, 224, 238, 1) 100%);
-    background: -ms-linear-gradient(-45deg, rgba(179, 220, 237, 1) 0%, rgba(179, 220, 237, 1) 27%, rgba(41, 184, 229, 1) 50%, rgba(179, 220, 237, 1) 70%, rgba(188, 224, 238, 1) 100%);
-    background: linear-gradient(135deg, rgba(179, 220, 237, 1) 0%, rgba(179, 220, 237, 1) 27%, rgba(41, 184, 229, 1) 50%, rgba(179, 220, 237, 1) 70%, rgba(188, 224, 238, 1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#b3dced', endColorstr='#bce0ee', GradientType=1);
-}
-
 .solhielo {
-    padding: 10px;
     margin-top: 5px;
     margin-bottom: 3px;
-    margin-left: 4rem;
 
 }
 

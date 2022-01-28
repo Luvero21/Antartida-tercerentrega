@@ -13,8 +13,8 @@
 /*------RESPONSIVE------*/
 @media (max-width: 425px) {
   .solhielo {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     text-align: left;
     padding: 0%;
     margin-left: 0%;
@@ -22,6 +22,11 @@
 
   .nav-item {
     margin: 0;
+  }
+
+  #menu a {
+    font-size: 10px;
+    padding: 5px;
   }
 
   .hogarrounded {
@@ -34,7 +39,7 @@
     height: 200px;
   }
 
-  .aire {
+  .airee {
     width: 300px;
     height: 280px;
   }
@@ -49,7 +54,7 @@
     height: 280px;
   }
 
-  .heladera {
+  .aire {
     width: 300px;
     height: 280px;
   }
@@ -125,8 +130,8 @@
 /*------RESPONSIVE------*/
 @media (max-width: 425px) {
   .solhielo {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     text-align: left;
     padding: 0%;
     margin-left: 0%;
@@ -134,6 +139,11 @@
 
   .nav-item {
     margin: 0;
+  }
+
+  #menu a {
+    font-size: 10px;
+    padding: 5px;
   }
 
   .hogarrounded {
@@ -146,7 +156,7 @@
     height: 200px;
   }
 
-  .aire {
+  .airee {
     width: 300px;
     height: 280px;
   }
@@ -161,7 +171,7 @@
     height: 280px;
   }
 
-  .heladera {
+  .aire {
     width: 300px;
     height: 280px;
   }
@@ -218,11 +228,10 @@
 .navbar {
   background-color: #F2F3F4;
   font-family: monospace;
-  font-display: swap;
 }
 
 #menu a {
-  font-size: 18px;
+  font-size: 20px;
   color: black;
 }
 
@@ -231,7 +240,7 @@
 }
 
 .nav-item {
-  margin: 20px;
+  margin: 10px;
   text-align: center;
   font-weight: bold;
 }
@@ -249,8 +258,8 @@
 /*------RESPONSIVE------*/
 @media (max-width: 425px) {
   .solhielo {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     text-align: left;
     padding: 0%;
     margin-left: 0%;
@@ -258,6 +267,11 @@
 
   .nav-item {
     margin: 0;
+  }
+
+  #menu a {
+    font-size: 10px;
+    padding: 5px;
   }
 
   .hogarrounded {
@@ -270,7 +284,7 @@
     height: 200px;
   }
 
-  .aire {
+  .airee {
     width: 300px;
     height: 280px;
   }
@@ -285,7 +299,7 @@
     height: 280px;
   }
 
-  .heladera {
+  .aire {
     width: 300px;
     height: 280px;
   }
@@ -377,8 +391,6 @@
   text-align: center;
 }
 .section_servicios {
-  padding: 15px;
-  margin-top: 20px;
   font-family: monospace;
   font-display: swap;
 }
@@ -398,6 +410,16 @@
   padding-top: 20px;
 }
 
+.section_servicios {
+  background: #b3dced;
+  background: -moz-linear-gradient(-45deg, #b3dced 0%, #b3dced 27%, #29b8e5 50%, #b3dced 70%, #bce0ee 100%);
+  background: -webkit-linear-gradient(-45deg, #b3dced 0%, #b3dced 27%, #29b8e5 50%, #b3dced 70%, #bce0ee 100%);
+  background: -o-linear-gradient(-45deg, #b3dced 0%, #b3dced 27%, #29b8e5 50%, #b3dced 70%, #bce0ee 100%);
+  background: -ms-linear-gradient(-45deg, #b3dced 0%, #b3dced 27%, #29b8e5 50%, #b3dced 70%, #bce0ee 100%);
+  background: linear-gradient(135deg, #b3dced 0%, #b3dced 27%, #29b8e5 50%, #b3dced 70%, #bce0ee 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#b3dced", endColorstr="#bce0ee", GradientType=1);
+}
+
 /*--------------portada-----------*/
 .container-portada {
   width: 100%;
@@ -405,10 +427,11 @@
   background-image: url(/assets/portada.webp);
   background-size: cover;
   position: relative;
-  animation: movimiento 20s linear infinite alternate;
-  animation-duration: 20s;
+  animation: movimiento 15s linear infinite alternate;
+  animation-duration: 15s;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  overflow: hidden;
 }
 
 @keyframes movimiento {
@@ -423,12 +446,11 @@
   width: 100%;
   height: 100%;
   position: absolute;
-  background: -webkit-linear-gradient(45deg, #A9CCE3, white);
+  background: -webkit-linear-gradient(45deg, lightblue, white);
   opacity: 0.6;
 }
 
 .container-details {
-  position: relative;
   width: 100%;
   display: flex;
 }
@@ -502,21 +524,9 @@
   object-fit: cover;
 }
 
-.section {
-  background: #b3dced;
-  background: -moz-linear-gradient(-45deg, #b3dced 0%, #b3dced 27%, #29b8e5 50%, #b3dced 70%, #bce0ee 100%);
-  background: -webkit-linear-gradient(-45deg, #b3dced 0%, #b3dced 27%, #29b8e5 50%, #b3dced 70%, #bce0ee 100%);
-  background: -o-linear-gradient(-45deg, #b3dced 0%, #b3dced 27%, #29b8e5 50%, #b3dced 70%, #bce0ee 100%);
-  background: -ms-linear-gradient(-45deg, #b3dced 0%, #b3dced 27%, #29b8e5 50%, #b3dced 70%, #bce0ee 100%);
-  background: linear-gradient(135deg, #b3dced 0%, #b3dced 27%, #29b8e5 50%, #b3dced 70%, #bce0ee 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#b3dced", endColorstr="#bce0ee", GradientType=1);
-}
-
 .solhielo {
-  padding: 10px;
   margin-top: 5px;
   margin-bottom: 3px;
-  margin-left: 4rem;
 }
 
 .hogarrounded {
@@ -536,8 +546,8 @@
 /*------RESPONSIVE------*/
 @media (max-width: 425px) {
   .solhielo {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     text-align: left;
     padding: 0%;
     margin-left: 0%;
@@ -545,6 +555,11 @@
 
   .nav-item {
     margin: 0;
+  }
+
+  #menu a {
+    font-size: 10px;
+    padding: 5px;
   }
 
   .hogarrounded {
@@ -557,7 +572,7 @@
     height: 200px;
   }
 
-  .aire {
+  .airee {
     width: 300px;
     height: 280px;
   }
@@ -572,7 +587,7 @@
     height: 280px;
   }
 
-  .heladera {
+  .aire {
     width: 300px;
     height: 280px;
   }
@@ -691,8 +706,8 @@
 /*------RESPONSIVE------*/
 @media (max-width: 425px) {
   .solhielo {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     text-align: left;
     padding: 0%;
     margin-left: 0%;
@@ -700,6 +715,11 @@
 
   .nav-item {
     margin: 0;
+  }
+
+  #menu a {
+    font-size: 10px;
+    padding: 5px;
   }
 
   .hogarrounded {
@@ -712,7 +732,7 @@
     height: 200px;
   }
 
-  .aire {
+  .airee {
     width: 300px;
     height: 280px;
   }
@@ -727,7 +747,7 @@
     height: 280px;
   }
 
-  .heladera {
+  .aire {
     width: 300px;
     height: 280px;
   }
@@ -783,8 +803,8 @@
 /*------RESPONSIVE------*/
 @media (max-width: 425px) {
   .solhielo {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     text-align: left;
     padding: 0%;
     margin-left: 0%;
@@ -792,6 +812,11 @@
 
   .nav-item {
     margin: 0;
+  }
+
+  #menu a {
+    font-size: 10px;
+    padding: 5px;
   }
 
   .hogarrounded {
@@ -804,7 +829,7 @@
     height: 200px;
   }
 
-  .aire {
+  .airee {
     width: 300px;
     height: 280px;
   }
@@ -819,7 +844,7 @@
     height: 280px;
   }
 
-  .heladera {
+  .aire {
     width: 300px;
     height: 280px;
   }
@@ -969,8 +994,8 @@ input::-webkit-input-placeholder {
 /*------RESPONSIVE------*/
 @media (max-width: 425px) {
   .solhielo {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     text-align: left;
     padding: 0%;
     margin-left: 0%;
@@ -978,6 +1003,11 @@ input::-webkit-input-placeholder {
 
   .nav-item {
     margin: 0;
+  }
+
+  #menu a {
+    font-size: 10px;
+    padding: 5px;
   }
 
   .hogarrounded {
@@ -990,7 +1020,7 @@ input::-webkit-input-placeholder {
     height: 200px;
   }
 
-  .aire {
+  .airee {
     width: 300px;
     height: 280px;
   }
@@ -1005,7 +1035,7 @@ input::-webkit-input-placeholder {
     height: 280px;
   }
 
-  .heladera {
+  .aire {
     width: 300px;
     height: 280px;
   }
@@ -1065,7 +1095,7 @@ input::-webkit-input-placeholder {
 }
 
 /*-----------ESTILOS NOSOTROS--------*/
-.section {
+.sectionNosotros {
   background: #b3dced;
   background: -moz-linear-gradient(-45deg, #b3dced 0%, #b3dced 27%, #29b8e5 50%, #b3dced 70%, #bce0ee 100%);
   background: -webkit-linear-gradient(-45deg, #b3dced 0%, #b3dced 27%, #29b8e5 50%, #b3dced 70%, #bce0ee 100%);
@@ -1094,6 +1124,7 @@ input::-webkit-input-placeholder {
 .section_vid {
   text-decoration: none;
   text-align: center;
+  padding-bottom: 30px;
 }
 
 .main__videoreproduccion {
@@ -1103,8 +1134,8 @@ input::-webkit-input-placeholder {
 /*------RESPONSIVE------*/
 @media (max-width: 425px) {
   .solhielo {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     text-align: left;
     padding: 0%;
     margin-left: 0%;
@@ -1112,6 +1143,11 @@ input::-webkit-input-placeholder {
 
   .nav-item {
     margin: 0;
+  }
+
+  #menu a {
+    font-size: 10px;
+    padding: 5px;
   }
 
   .hogarrounded {
@@ -1124,7 +1160,7 @@ input::-webkit-input-placeholder {
     height: 200px;
   }
 
-  .aire {
+  .airee {
     width: 300px;
     height: 280px;
   }
@@ -1139,7 +1175,7 @@ input::-webkit-input-placeholder {
     height: 280px;
   }
 
-  .heladera {
+  .aire {
     width: 300px;
     height: 280px;
   }
@@ -1221,8 +1257,8 @@ input::-webkit-input-placeholder {
 /*------RESPONSIVE------*/
 @media (max-width: 425px) {
   .solhielo {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     text-align: left;
     padding: 0%;
     margin-left: 0%;
@@ -1230,6 +1266,11 @@ input::-webkit-input-placeholder {
 
   .nav-item {
     margin: 0;
+  }
+
+  #menu a {
+    font-size: 10px;
+    padding: 5px;
   }
 
   .hogarrounded {
@@ -1242,7 +1283,7 @@ input::-webkit-input-placeholder {
     height: 200px;
   }
 
-  .aire {
+  .airee {
     width: 300px;
     height: 280px;
   }
@@ -1257,7 +1298,7 @@ input::-webkit-input-placeholder {
     height: 280px;
   }
 
-  .heladera {
+  .aire {
     width: 300px;
     height: 280px;
   }
@@ -1317,14 +1358,6 @@ input::-webkit-input-placeholder {
 }
 
 /*-------------ESTILOS PROMOCIONES-----------*/
-.section_prom {
-  margin: 0;
-  background-image: url(/assets/portada.webp);
-  background-size: cover;
-  background-position: center;
-  opacity: 0.7;
-}
-
 .section__promo {
   text-align: center;
   padding: 20px;
@@ -1334,6 +1367,16 @@ input::-webkit-input-placeholder {
   -webkit-background-clip: text;
   position: relative;
   font-family: monospace;
+}
+
+.section_prom {
+  background: #b3dced;
+  background: -moz-linear-gradient(-45deg, #b3dced 0%, #b3dced 27%, #29b8e5 50%, #b3dced 70%, #bce0ee 100%);
+  background: -webkit-linear-gradient(-45deg, #b3dced 0%, #b3dced 27%, #29b8e5 50%, #b3dced 70%, #bce0ee 100%);
+  background: -o-linear-gradient(-45deg, #b3dced 0%, #b3dced 27%, #29b8e5 50%, #b3dced 70%, #bce0ee 100%);
+  background: -ms-linear-gradient(-45deg, #b3dced 0%, #b3dced 27%, #29b8e5 50%, #b3dced 70%, #bce0ee 100%);
+  background: linear-gradient(135deg, #b3dced 0%, #b3dced 27%, #29b8e5 50%, #b3dced 70%, #bce0ee 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#b3dced", endColorstr="#bce0ee", GradientType=1);
 }
 
 .imagInstala1 {
@@ -1367,8 +1410,8 @@ input::-webkit-input-placeholder {
 /*------RESPONSIVE------*/
 @media (max-width: 425px) {
   .solhielo {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     text-align: left;
     padding: 0%;
     margin-left: 0%;
@@ -1376,6 +1419,11 @@ input::-webkit-input-placeholder {
 
   .nav-item {
     margin: 0;
+  }
+
+  #menu a {
+    font-size: 10px;
+    padding: 5px;
   }
 
   .hogarrounded {
@@ -1388,7 +1436,7 @@ input::-webkit-input-placeholder {
     height: 200px;
   }
 
-  .aire {
+  .airee {
     width: 300px;
     height: 280px;
   }
@@ -1403,7 +1451,7 @@ input::-webkit-input-placeholder {
     height: 280px;
   }
 
-  .heladera {
+  .aire {
     width: 300px;
     height: 280px;
   }
@@ -1518,11 +1566,15 @@ input::-webkit-input-placeholder {
 }
 
 .galeria--item:nth-child(9) {
-  grid-: span 2;
+  grid: span 2;
 }
 
 .galeria--item:nth-child(1) {
   grid-row-start: span 2;
+}
+
+.container__fluid {
+  padding-bottom: 30px;
 }
 
 /*# sourceMappingURL=main.css.map */
