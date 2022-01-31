@@ -33,12 +33,15 @@
         font-size: 25px;
         font-weight: bold;
         padding: 30px;
+        padding-left: 50px;
+        padding-right: 50px;
         text-align: center;
         font-family: monospace;
         font-display: swap;
         height: auto;
         display: flex;
     }
+
 
     &_hogar {
         padding-top: 2px;
@@ -87,13 +90,12 @@
     height: 600px;
     background-image: url(/assets/portada.webp );
     background-size: cover;
-    position: relative;
     animation: movimiento 15s linear infinite alternate;
     animation-duration: 15s;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     overflow: hidden;
-
+    position: relative;
+    z-index: 1;
 }
 
 @keyframes movimiento {
@@ -109,19 +111,24 @@
 .capa-gradient {
     width: 100%;
     height: 100%;
-    position: absolute;
+    position: relative;
     background: -webkit-linear-gradient(45deg,
             lightblue,
             white);
-    opacity: 0.6;
+    opacity: 0.5;
+    z-index: 2;
 }
 
 
 .container-details {
     width: 100%;
+    max-height: auto;
     display: flex;
+    position: relative;
+    z-index: 3;
 
 }
+
 
 
 .btn-Info {
